@@ -7,8 +7,8 @@ public class Calculo {
 		
 		 c1.setN1(8);
 		 c1.setN2(4);
-		 
-		 c1.();
+		 //casa
+		 c1.dividir();
 		 
 	
 	}
