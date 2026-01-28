@@ -5,11 +5,12 @@ public class Calculadora implements interCalculadora{
 	private int n1 = 0 ;
 	private int n2 = 0 ;
 	private int resultado = 0 ;
+	private String operacao = "";
 	
 	
 	
 	public Calculadora () {
-		
+		System.out.println("Escolha um numero e a operação :");
 	}
 	
 	
@@ -27,19 +28,31 @@ public class Calculadora implements interCalculadora{
 		this.n2 = n;
 	}
 	
+	public String getOperacao() {
+		return operacao;
+	}
+	public void setOperacao(String o) {
+		this.operacao = o;
+	}
 	public int getResultado () {
 		return resultado;
 	}
 	public void setResultado (int r) {
 		this.resultado = r;
 	}
+	
+	
 	@Override
 	public void somar() {
-		this.setResultado(this.getN1() + this.getN2());
+		if(this.getOperacao() {
+			this.setResultado(this.getN1() + this.getN2());
+			System.out.println(this.getN1() + " + " + this.getN2() + " = " + this.getResultado());
+		}
 	}
 	@Override
 	public void subtrair() {
 		this.setResultado(this.getN1() - this.getN2());
+		System.out.println(this.getN1() + " - " + this.getN2() + " = " + this.getResultado());
 	}
 	
 	@Override
@@ -50,6 +63,7 @@ public class Calculadora implements interCalculadora{
 	@Override
 	public void dividir() {
 		this.setResultado(this.getN1() / this.getN2());
+		System.out.println(this.getN1() + " / " + this.getN2() + " = " + this.getResultado());
 	}
 	
 	

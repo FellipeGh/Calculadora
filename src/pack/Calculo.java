@@ -8,7 +8,7 @@ public class Calculo {
 		 c1.setN1(8);
 		 c1.setN2(4);
 		 
-		 c1.multiplicar();
+		 c1.();
 		 
 	
 	}
